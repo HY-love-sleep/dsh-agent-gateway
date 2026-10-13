@@ -1,0 +1,6 @@
+# dsh-agent-gateway bundle patch
+#
+# Empty array: the profile explicitly controls whether to load the
+# dsh-agent-gateway plugin. Nothing is inserted here, so the plugin is not
+# force-loaded into every profile.
+[]

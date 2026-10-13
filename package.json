@@ -1,0 +1,36 @@
+{
+  "name": "dsh-agent-gateway",
+  "version": "0.1.0",
+  "description": "A generic multi-session HTTP/SSE gateway plugin for deepseek-harness (dsh) agents.",
+  "type": "module",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "gateway",
+    "agent",
+    "sse"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "lib"
+  ],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
